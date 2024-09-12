@@ -20,7 +20,7 @@ function Benefits() {
       <div className="container mx-auto px-4">
         {benefitSections.map((section, index) => (
           <div key={index} className={index === 0 ? 'mb-12' : 'mt-12'}>
-            <h2 className="text-darkBlue text-3xl md:text-4xl font-bold text-center md:text-left">
+            <h2 className="text-darkGray text-3xl md:text-4xl font-bold text-center md:text-left">
               {section.heading}
             </h2>
             <p className="text-gray-600 text-center md:text-left mt-4">

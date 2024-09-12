@@ -40,7 +40,7 @@ function OurMission() {
             <div className="container mx-auto px-4 md:flex md:items-center">
                 {/* Text Section */}
                 <div className="md:w-1/2 md:order-2 order-1 mb-8 md:mb-0 md:pl-8 md:ml-16">
-                    <h2 className="text-darkBlue text-3xl md:text-6xl font-bold text-center md:text-left">
+                    <h2 className="text-darkGray text-3xl md:text-6xl font-bold text-center md:text-left">
                         Our Mission
                     </h2>
                 </div>

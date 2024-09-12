@@ -21,7 +21,7 @@ const logos = [
 function TrustedFamily() {
     return (
         <div className="bg-white py-10 md:my-16">
-            <h2 className="text-darkBlue text-3xl md:text-6xl font-bold text-center">
+            <h2 className="text-darkGray text-3xl md:text-6xl font-bold text-center">
                 Our Trusted Family
             </h2>
             <div className="overflow-hidden w-full mt-12">

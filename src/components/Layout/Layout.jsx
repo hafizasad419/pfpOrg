@@ -7,7 +7,7 @@ function Layout() {
     return (
         <>
             <Navbar />
-            <div className='px-4 md:px-16 bg-white'>
+            <div className='bg-white'>
                 <Outlet />
             </div>
             <Footer />

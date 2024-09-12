@@ -8,12 +8,11 @@ export default {
     extend: {
       colors: {
         'orange': '#e16a39fd',
-        'lightBrown': '#d3d3d5fd',
-        'darkBrown': '#463d3bfe',
+        'lightGray': '#d3d3d5fd',
+        'darkGray': '#463d3bfe',
       },
       fontFamily: {
-        "Roboto": ["Roboto", "sans-serif"],
-        "Poppins": ["Poppins", "sans-serif"],
+        sans: ["Roboto", "sans-serif"]
       }
     },
   },
@@ -21,6 +20,5 @@ export default {
 }
 
 // #e16a39fd - orange
-// #d3d3d5fd - lightBrown
-// #463d3bfe - darkBrown
-
+// #d3d3d5fd - lightGray
+// #463d3bfe - darkGray
