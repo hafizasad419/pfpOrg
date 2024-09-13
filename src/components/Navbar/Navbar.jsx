@@ -9,7 +9,7 @@ function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const navbarItems = [
-        { id: 1, title: "Home", route: "/" },
+        { id: 1, title: "IFCE 2025", route: "/" },
         { id: 2, title: "About", route: "/about" },
         { id: 3, title: "Contact", route: "/contact" },
     ];

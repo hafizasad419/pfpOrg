@@ -1,14 +1,15 @@
 import React from 'react';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// Import the new images for OurHistory
-// import historySlide1 from '../../../assets/OurHistory/slide1.webp';
-// import historySlide2 from '../../../assets/OurHistory/slide2.webp';
-// import historySlide3 from '../../../assets/OurHistory/slide3.webp';
+import slide1 from '../../../assets/IFCE2025/slide1.jpg';
+import slide2 from '../../../assets/IFCE2025/slide2.jpg';
+import slide3 from '../../../assets/IFCE2025/slide3.jpg';
+import slide4 from '../../../assets/IFCE2025/slide4.jpg';
+import slide5 from '../../../assets/IFCE2025/slide5.jpg';
 
-function OurHistory() {
+function IFCE2025() {
     const settings = {
         dots: true,
         infinite: true,
@@ -20,20 +21,28 @@ function OurHistory() {
         arrows: true,
     };
 
-    // const slides = [
-    //     {
-    //         image: historySlide1,
-    //         alt: 'history slide 1',
-    //     },
-    //     {
-    //         image: historySlide2,
-    //         alt: 'history slide 2',
-    //     },
-    //     {
-    //         image: historySlide3,
-    //         alt: 'history slide 3',
-    //     },
-    // ];
+    const slides = [
+        {
+            image: slide1,
+            alt: 'Slide 1',
+        },
+        {
+            image: slide2,
+            alt: 'Slide 2',
+        },
+        {
+            image: slide3,
+            alt: 'Slide 3',
+        },
+        {
+            image: slide4,
+            alt: 'Slide 4',
+        },
+        {
+            image: slide5,
+            alt: 'Slide 5',
+        },
+    ];
 
     return (
         <div className="bg-white py-10">
@@ -44,10 +53,10 @@ function OurHistory() {
 
                     {/* Heading */}
                     <h2 className="text-darkGray text-3xl md:text-6xl font-bold text-center md:text-left">
-                        Our History
+                        IFCE 2025
                     </h2>
 
-                    {/* History Info */}
+                    {/* Event Info */}
 
                     <p 
                     className='mt-2'
@@ -75,4 +84,4 @@ function OurHistory() {
     );
 }
 
-export default OurHistory;
+export default IFCE2025;
