@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import React, { useState } from 'react'
 import { Phone, Mail, MapPin } from 'lucide-react'
 
@@ -22,9 +23,12 @@ export default function Contact() {
     console.log('Form submitted:', formData)
     // Here you would typically send the data to your server
   }
-
   return (
-    <div className="min-h-screen bg-white p-4 md:p-8 font-sans">
+    <motion.div 
+    initial={{ opacity: 0, scale: 0.9 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.5 }}
+    className="min-h-screen bg-white p-4 md:p-8 font-sans">
       <div className="max-w-4xl mx-auto bg-lightGray rounded-lg shadow-lg overflow-hidden">
         <div className="bg-orange text-white p-6 md:p-8">
           <h1 className="text-2xl md:text-3xl font-bold mb-2">Stall Booking Form</h1>
@@ -210,6 +214,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
