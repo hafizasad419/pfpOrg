@@ -1,12 +1,12 @@
 import React from 'react';
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import SlidesAndText from '../../../utils/SlidesAndText/SlidesAndText';
 
-// Import the new images for OurHistory
-// import historySlide1 from '../../../assets/OurHistory/slide1.webp';
-// import historySlide2 from '../../../assets/OurHistory/slide2.webp';
-// import historySlide3 from '../../../assets/OurHistory/slide3.webp';
+
+import historySlide1 from '../../../assets/OurHistory/slide1.jpg';
+import historySlide2 from '../../../assets/OurHistory/slide2.jpg';
+import historySlide3 from '../../../assets/OurHistory/slide3.jpg';
+import historySlide4 from '../../../assets/OurHistory/slide4.jpg';
+import historySlide5 from '../../../assets/OurHistory/slide5.jpg';
 
 function OurHistory() {
     const settings = {
@@ -20,58 +20,46 @@ function OurHistory() {
         arrows: true,
     };
 
-    // const slides = [
-    //     {
-    //         image: historySlide1,
-    //         alt: 'history slide 1',
-    //     },
-    //     {
-    //         image: historySlide2,
-    //         alt: 'history slide 2',
-    //     },
-    //     {
-    //         image: historySlide3,
-    //         alt: 'history slide 3',
-    //     },
-    // ];
+    const slides = [
+        {
+            image: historySlide1, alt: 'history slide 1',
+        },
+        {
+            image: historySlide2, alt: 'history slide 2',
+        },
+        {
+            image: historySlide3, alt: 'history slide 3',
+        },
+        {
+            image: historySlide4, alt: 'history slide 4',
+        },
+        {
+            image: historySlide5, alt: 'history slide 5',
+        },
+    ];
 
     return (
-        <div className="bg-white py-10">
-            <div className="container mx-auto px-4 md:flex md:items-center">
-                {/* Text Section */}
-                <div className="md:w-1/2 md:pr-8 mb-8 md:mb-0">
+        <SlidesAndText
+            className="md:my-32"
+            title="OUR HISTORY"
+            description={`The International Foundry Conference and Exhibition (IFCE) has a rich history spanning over nine years, with the first event held in 2016. Since then, IFCE has grown to become one of the premier global events for the foundry industry, attracting thousands of attendees from around the world. Over the years, IFCE has established itself as a platform for knowledge sharing, innovation, and collaboration, bringing together industry leaders, experts, and associations to shape the future of the foundry sector.
+
+The previous eight editions of IFCE have been a testament to the event's growing popularity and influence. Each edition has built upon the success of the previous one, with a steady increase in attendance, exhibitors, and conference sessions. IFCE has also expanded its scope to include new topics and themes, reflecting the evolving needs and trends of the foundry industry. From technological advancements to sustainability and environmental concerns, IFCE has addressed the most pressing issues facing the industry, providing a platform for discussion, debate, and solution-finding.
+
+As we approach the ninth edition of IFCE in 2025, we can expect an even more comprehensive and engaging event. With a focus on innovation, education, and networking, IFCE2025 promises to be a landmark event that will set the tone for the future of the foundry industry. Building on the success of the previous eight editions, IFCE2025 will bring together the global foundry community to share knowledge, showcase innovations, and drive progress. Join us at IFCE2025 and be a part of this exciting journey!`
+                .split('\n')
+                .map((line, index) => (
+                    <span key={index}>
+                        {line}
+                        <br />
+                    </span>
+                ))
 
 
-                    {/* Heading */}
-                    <h2 className="text-darkGray text-3xl md:text-6xl font-bold text-center md:text-left">
-                        Our History
-                    </h2>
-
-                    {/* History Info */}
-
-                    <p 
-                    className='mt-2'
-                    >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, odit repellat officia corporis provident ea illum commodi, minus temporibus laudantium dolor laboriosam quo omnis totam ducimus accusamus consequatur reiciendis hic libero mollitia soluta vitae debitis? Laudantium nostrum, sint, veniam vel rerum, aperiam eius esse reiciendis quasi consequuntur adipisci cum ad!</p>
-
-                </div>
-
-                {/* Slider Section */}
-                <div className="md:w-1/2">
-                    <Slider {...settings}>
-                        {slides.map((slide, index) => (
-                            <div key={index} className="w-full">
-                                <img
-                                    loading='lazy'
-                                    src={slide.image}
-                                    alt={slide.alt}
-                                    className="w-full h-auto object-cover"
-                                />
-                            </div>
-                        ))}
-                    </Slider>
-                </div>
-            </div>
-        </div>
+            }
+            slides={slides}
+            reverse={true}
+        />
     );
 }
 

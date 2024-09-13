@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import React, { useState } from 'react'
-import { Phone, Mail, MapPin } from 'lucide-react'
+import { Phone, Mail, MapPin, Globe } from 'lucide-react'
+import MyButton from '../../utils/MyButton/MyButton'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -179,14 +180,13 @@ export default function Contact() {
               Bank: Alfalah Bank Gulberg, Lahore, Pakistan
             </p>
           </div>
+          
           <div className="flex justify-center">
-            <button
-              type="submit"
-              className="px-6 py-2 bg-orange text-white rounded-md hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-orange focus:ring-opacity-50 transition-colors"
-            >
-              Submit
-            </button>
+            <MyButton 
+            className="md:px-8 text-xl font-bold"
+            children='Book Now' type='submit' />
           </div>
+
         </form>
         <div className="bg-darkGray text-white p-6 md:p-8">
           <h2 className="text-xl font-semibold mb-4">Secretariat - Pakistan Foundry Association</h2>
@@ -205,10 +205,10 @@ export default function Contact() {
             </div>
             <div className="flex items-center">
               <Mail className="text-orange mr-2" size={18} />
-              <span>pakistanfoundryassociation@gmail.com</span>
+              <span>pakistanfoundryassociation <br /> @gmail.com</span>
             </div>
             <div className="flex items-center">
-              <Mail className="text-orange mr-2" size={18} />
+              <Globe className="text-orange mr-2" size={18} />
               <span>www.pfa.org.pk</span>
             </div>
           </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { MyButton } from '../../utils';
-import { IFCE2025, OurHistory } from "../"
+import { Benefits, IFCE2025, KeyPoints, OurHistory } from "../"
 import banner1 from "../../assets/banners/banner1.jpg"
 
 function Home() {
@@ -21,9 +21,12 @@ function Home() {
         </div>
 
         <IFCE2025 />
-        {/* <OurHistory /> */}
-
+        <OurHistory />
+        <KeyPoints />
+        <Benefits />
       </motion.div>
+
+
 
 
     </main>
