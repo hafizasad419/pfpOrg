@@ -60,7 +60,10 @@ function IFCE2025() {
 
                     <p 
                     className='mt-2'
-                    >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, odit repellat officia corporis provident ea illum commodi, minus temporibus laudantium dolor laboriosam quo omnis totam ducimus accusamus consequatur reiciendis hic libero mollitia soluta vitae debitis? Laudantium nostrum, sint, veniam vel rerum, aperiam eius esse reiciendis quasi consequuntur adipisci cum ad!</p>
+                    >The International Foundry Conference and Exhibition (IFCE) 2025 is a groundbreaking event that brings together the global foundry community under one roof. This prestigious gathering is a convergence of the world's leading Foundry Associations, industry experts, and innovators, all united by a shared passion for advancing the foundry industry. IFCE 2025 is a unique platform where the latest trends, technologies, and best practices in the foundry sector will be showcased, discussed, and debated.
+<br />
+<br />
+                    At IFCE 2025, attendees will have the opportunity to connect with fellow professionals from around the world, learn from industry thought leaders, and explore the latest innovations and solutions that are shaping the future of the foundry industry. With a focus on fostering collaboration, driving growth, and promoting sustainable development, IFCE 2025 is poised to be a landmark event that will set the tone for the future of the foundry industry. Join us at IFCE 2025 and be a part of this exciting journey!</p>
 
                 </div>
 
