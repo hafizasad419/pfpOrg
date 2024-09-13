@@ -36,7 +36,7 @@ function KeyPoints() {
 
     return (
         <SlidesAndText
-            className="md:my-32"
+            className="md:my-32 my-16"
             title="IFCE 2025 Key Points"
             description={
                 `IFCE2025 is poised to be a groundbreaking event that will bring together the global foundry community to share knowledge, showcase innovations, and drive progress. The event will feature a comprehensive conference program with keynote sessions, technical presentations, and panel discussions, focusing on the latest trends, technologies, and best practices in the foundry industry. Additionally, the exhibition will showcase the latest products, services, and solutions from leading companies and startups, providing attendees with a unique opportunity to explore new technologies and innovations.
