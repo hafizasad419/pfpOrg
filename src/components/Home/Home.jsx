@@ -17,7 +17,9 @@ function Home() {
 
         <div>
           <img
-            src={banner1} alt="" />
+            src={banner1}
+            className="min-w-full"
+            alt="" />
         </div>
 
         <IFCE2025 />
