@@ -78,20 +78,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Payment Information */}
-        <div className="mt-8 pt-8 border-t border-gray-700">
-          <h3 className="text-lg font-semibold text-orange mb-4">Mode of Payment</h3>
-          <p className="text-sm text-lightGray">
-            Account Title: Pak Foundry Association
-            <br />
-            Account#: 0028-1003549553
-            <br />
-            IBAN# PK71ALFH0028001003549553
-            <br />
-            Bank: Alfalah Bank Gulberg, Lahore, Pakistan
-          </p>
-        </div>
-
+      
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">
           <p className="text-sm text-lightGray">
